@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "LINE Seed Sans";
+  font-weight: 300;
+  src: url("../fonts/Line_Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LINE Seed Sans";
+  font-weight: 400;
+  src: url("../fonts/Line_Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LINE Seed Sans";
+  font-weight: 700;
+  src: url("../fonts/Line_Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LINE Seed Sans";
+  font-weight: 800;
+  src: url("../fonts/Line_ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LINE Seed Sans";
+  font-weight: 900;
+  src: url("../fonts/Line_Heavy.woff") format("woff");
+}
+
+html body {
+  @apply font-body antialiased
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-display
+}
+
+:root {
+  --font-display: "Line Seed Sans";
+  --font-body: "Line Seed Sans"
+}

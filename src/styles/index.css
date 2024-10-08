@@ -1,0 +1,7 @@
+@import "./fonts.css";
+
+.hero-image {
+  background-image: url(../assets/hero.png);
+  background-position: bottom;
+  background-size: cover;
+}
