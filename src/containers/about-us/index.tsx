@@ -31,7 +31,7 @@ const AboutUs: FC = () => {
           <div>
             <div className="grid grid-cols-2 gap-x-7 gap-y-4">
               {experiences.map((experience) => (
-                <div className="px-5 py-4 space-y-2 border border-neutral-200 rounded-2xl shadow-sm hover:shadow-md text-center transition-all">
+                <div key={experience.label} className="px-5 py-4 space-y-2 border border-neutral-200 rounded-2xl shadow-sm hover:shadow-md text-center transition-all">
                   <h2 className="text-3xl text-secondary font-semibold">{experience.value}</h2>
                   <p className="text-neutral-700 text-sm">{experience.label}</p>
                 </div>

@@ -4,7 +4,7 @@ import Logo from "@/components/logo";
 import Navigation from "@/components/navigation";
 import { FC, useEffect, useRef, useState } from "react";
 
-let OPTIONS = {
+const OPTIONS = {
   root: null,
   rootMargin: "0px",
   threshold: 1.0,
