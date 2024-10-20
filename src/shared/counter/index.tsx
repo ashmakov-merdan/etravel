@@ -21,13 +21,13 @@ const Counter: FC<CounterProps> = ({ value=0, direction, className }) => {
     if (isInView) {
       motionValue.set(direction === "down" ? 0 : value);
     }
-  }, [motionValue, isInView]);
+  }, [motionValue, isInView, direction, value]);
 
   useEffect(
     () =>
-      springValue.on("change", (latest) => {
+      springValue.on("change", (latest: number) => {
         if (ref.current) {
-          ref.current.textContent = Intl.NumberFormat("en-US").format(latest.toFixed(0) as any);
+          ref.current.textContent = Intl.NumberFormat("en-US").format(latest);
         }
       }),
     [springValue]

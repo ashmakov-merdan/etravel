@@ -12,4 +12,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
   return <button ref={ref} className={`px-6 py-3 bg-primary rounded-xl text-white font-semibold ${className}`} {...args}>{children}</button>
 });
 
+Button.displayName = "Button"
+
 export default Button;

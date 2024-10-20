@@ -13,7 +13,7 @@ const Menu = () => {
         <Link href={`#${nav}`} role={"link"} className="text-nowrap">{t(`${nav}`)}</Link>
       </li>
     ))
-  ), [navigation, t]);
+  ), [t]);
 
   return (
     <nav role={"navigation"} className="py-6 z-[10]">

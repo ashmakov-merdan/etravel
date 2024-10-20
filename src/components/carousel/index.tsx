@@ -25,17 +25,16 @@ const Carousel: FC = () => {
   const [finish, setFinish] = useState<boolean>(false);
   const [rerender, setRerender] = useState<boolean>(false);
 
-  const options: ValueAnimationTransition<number> = {
-    ease: "linear",
-    duration,
-    repeat: Infinity,
-    repeatType: "loop",
-    repeatDelay: 0
-  }
-
   useEffect(() => {
     let controls;
     const final = -width / 2 - 8
+    const options: ValueAnimationTransition<number> = {
+      ease: "linear",
+      duration,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0
+    }
 
     if (finish) {
       controls = animate(x, [x.get(), final], {
@@ -52,7 +51,7 @@ const Carousel: FC = () => {
 
 
     return controls?.stop
-  }, [x, width, duration, finish, rerender, options]);
+  }, [x, width, duration, finish, rerender]);
 
   return (
     <motion.div
