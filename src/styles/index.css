@@ -1,7 +1,26 @@
 @import "./fonts.css";
 
-.hero-image {
-  background-image: url(../assets/hero.png);
-  background-position: bottom;
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.about {
+  background-image: url(../assets/about-us.png);
   background-size: cover;
+  background-position: right bottom;
+}
+
+.contact {
+  background-image: url(../assets/contact-us.png);
+  background-size: cover;
+  background-position: top;
 }

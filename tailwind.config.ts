@@ -8,6 +8,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/containers/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/shared/**/*.{tsx,ts}"
   ],
   theme: {
     extend: {
@@ -44,6 +45,9 @@ const config: Config = {
           "900": "#7f330f",
           "950": "#451705",
         },
+        black: {
+          DEFAULT: "#121212"
+        }
       },
     },
   },

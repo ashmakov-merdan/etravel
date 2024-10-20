@@ -1,14 +1,12 @@
-import { FC } from "react";
-import { Menu, MenuButton } from "@headlessui/react";
-import { LanguageIcon } from "@heroicons/react/16/solid";
+import TranslateIcon from "@/lib/icons/TranslateIcon";
 
-const Language: FC = () => {
+const Language = () => {
   return (
-    <Menu>
-      <MenuButton>
-        <LanguageIcon className="size-5"/>
-      </MenuButton>
-    </Menu>
+    <div className="flex justify-end">
+      <button className="p-3 border rounded-full border-neutral-500">
+        <TranslateIcon color={"#737373"} />
+      </button>
+    </div>
   )
 };
 
