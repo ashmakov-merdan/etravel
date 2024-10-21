@@ -1,20 +1,20 @@
 {
   "navigation": {
-    "about-us": "Biz barada",
+    "about-us": "О нас",
     "destinations": "Destinations",
-    "contact-us": "Habarlaşmak",
-    "gallery": "Galereýa"
+    "contact-us": "Связаться с нами",
+    "gallery": "Галерея"
   },
   "footer": {
     "sitemap": {
-      "title": "Sitemap",
-      "about-us": "About us",
+      "title": "Компания",
+      "about-us": "О нас",
       "destinations": "Destinations",
-      "contact-us": "Contact us",
-      "gallery": "Gallery"
+      "contact-us": "Связаться с нами",
+      "gallery": "Галерея"
     },
     "meet-us": {
-      "title": "Meet us",
+      "title": "Контакт",
       "phone": "+99365123456",
       "email": "info@emintravels.com",
       "address": "Ashgabat"

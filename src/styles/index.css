@@ -24,3 +24,13 @@ img {
   background-size: cover;
   background-position: top;
 }
+
+/* .gallery-gradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0,0, 0),
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0)
+  );
+} */

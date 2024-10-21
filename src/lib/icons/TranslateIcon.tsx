@@ -6,7 +6,7 @@ interface TranslateIconProps {
 
 const TranslateIcon: FC<TranslateIconProps> = ({ color="#121212" }) => {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.7188 16.7471L13.5625 8.43465L9.40625 16.7471" stroke={color} stroke-linecap="round" stroke-linejoin="round" />
       <path d="M10.5938 14.3721H16.5312" stroke={color} stroke-linecap="round" stroke-linejoin="round" />
       <path d="M7.03125 3.0909V4.87215" stroke={color} stroke-linecap="round" stroke-linejoin="round" />
