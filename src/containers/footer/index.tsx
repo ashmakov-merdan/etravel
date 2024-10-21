@@ -1,5 +1,6 @@
 import Logo from "@/components/logo";
 import InstagramIcon from "@/lib/icons/InstagramIcon";
+import { useTranslations } from "next-intl";
 import { FC } from "react";
 
 type WidgetMenuType = {
@@ -15,7 +16,7 @@ const widgets: WidgetMenuType[] = [
   {
     title: "sitemap",
     menu: [
-      { label: "about", href: "#about-us" },
+      { label: "about-us", href: "#about-us" },
       { label: "destinations", href: "#destinations" },
       { label: "contact-us", href: "#contact-us" },
       { label: "gallery", href: "#gallery" }
@@ -24,19 +25,21 @@ const widgets: WidgetMenuType[] = [
   {
     title: "meet-us",
     menu: [
-      { label: "+99365616263", href: "tel:+99365616263" },
-      { label: "info@etravel.com", href: "mailto:info@etravel.com" },
-      { label: "Ashgabat", href: "Ashgabat" }
+      { label: "phone", href: "tel:+99365616263" },
+      { label: "email", href: "mailto:info@etravel.com" },
+      { label: "address", href: "Ashgabat" }
     ]
   }
 ]
 
 const Footer: FC = () => {
+  const t = useTranslations("footer");
+
   const renderWidget = (menu: WidgetMenuType) => {
     return (
       <div className="text-sm">
         <h2 className="font-semibold text-primary">
-          {menu.title}
+          {t(`${menu.title}.title`)}
         </h2>
         <ul className="mt-5 space-y-6">
           {menu.menu.map((item, index) => (
@@ -46,7 +49,7 @@ const Footer: FC = () => {
                 className="text-primary hover:text-primary-700"
                 href={item.href}
               >
-                {item.label}
+                {t(`${menu.title}.${item.label}`)}
               </a>
             </li>
           ))}

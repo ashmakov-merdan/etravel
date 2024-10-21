@@ -4,5 +4,20 @@
     "destinations": "Destinations",
     "contact-us": "Habarlaşmak",
     "gallery": "Galereýa"
+  },
+  "footer": {
+    "sitemap": {
+      "title": "Sitemap",
+      "about-us": "About us",
+      "destinations": "Destinations",
+      "contact-us": "Contact us",
+      "gallery": "Gallery"
+    },
+    "meet-us": {
+      "title": "Meet us",
+      "phone": "+99365123456",
+      "email": "info@emintravels.com",
+      "address": "Ashgabat"
+    }
   }
 }
