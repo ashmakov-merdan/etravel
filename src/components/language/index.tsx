@@ -13,6 +13,7 @@ const Language = () => {
   const onChangeLocale = (value: string) => {
     startTransition(() => {
       router.replace(
+        // eslint-disable-next-line
         // @ts-ignore
         { pathname, params },
         { locale: value }
