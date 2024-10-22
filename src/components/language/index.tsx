@@ -23,7 +23,7 @@ const Language = () => {
   }
 
   return (
-    <div className="flex justify-end z-20">
+    <div className="flex justify-end z-50">
       <button className="p-3 rounded-full border border-neutral-500 hover:border-primary backdrop-blur-md bg-white/30" onClick={() => setShow(!show)}>
         <TranslateIcon color={"#222E9A"} />
       </button>

@@ -1,5 +1,8 @@
 import Logo from "@/components/logo";
+import FacebookIcon from "@/lib/icons/FacebookIcon";
 import InstagramIcon from "@/lib/icons/InstagramIcon";
+import XIcon from "@/lib/icons/XIcon";
+import YoutubeIcon from "@/lib/icons/YoutubeIcon";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
 
@@ -63,11 +66,10 @@ const Footer: FC = () => {
       <div className="py-6 grid grid-cols-2">
         <div className="space-y-6">
           <Logo size="w-[120px]" />
-          <p className="max-w-[480px] text-primary-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora rerum debitis accusantium assumenda, a soluta expedita aliquid et quibusdam deleniti?</p>
           <div className="inline-flex gap-4">
             <InstagramIcon />
-            <InstagramIcon />
-            <InstagramIcon />
+            <FacebookIcon />
+            <YoutubeIcon />
           </div>
         </div>
         <div className="grid grid-cols-3">{widgets.map(renderWidget)}</div>
