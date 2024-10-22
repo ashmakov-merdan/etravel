@@ -5,11 +5,11 @@ import image2 from "@/assets/turkiye.avif";
 import image3 from "@/assets/germany.png";
 import image4 from "@/assets/uzbek.png";
 
-const places = [
-  { title: "Moscow", image: image1 },
-  { title: "Turkiye", image: image2 },
-  { title: "Germany", image: image3 },
-  { title: "Tashkent", image: image4 },
+export const places = [
+  { title: "moscow", image: image1 },
+  { title: "turkiye", image: image2 },
+  { title: "germany", image: image3 },
+  { title: "uzbekistan", image: image4 },
 ];
 
 const Hero: FC = () => {

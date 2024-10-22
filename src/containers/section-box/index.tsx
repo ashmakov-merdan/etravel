@@ -10,7 +10,7 @@ interface SectionBoxProps {
 
 const SectionBox: FC<SectionBoxProps> = ({ isReverse = false, children }) => {
   return (
-    <div className={`w-full flex ${isReverse === false ? "flex-row bg-secondary-100" : "flex-row-reverse bg-primary-100"} rounded-[100px] overflow-hidden`}>
+    <div className={`w-full aspect-[16/7] flex ${isReverse === false ? "flex-row bg-secondary-100" : "flex-row-reverse bg-primary-100"} rounded-[100px] overflow-hidden`}>
       {children}
       <div className={`relative flex-1 ${isReverse === false ? "about" : "contact"}`}>
         {!isReverse ? (

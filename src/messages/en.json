@@ -5,6 +5,27 @@
     "contact-us": "Contact us",
     "gallery": "Gallery"
   },
+  "hero": {
+    "explore-the-world": "Explore the world",
+    "travel-with-us": "Travel with us"
+  },
+  "about-us": {
+    "heading": "About us",
+    "description": "We're more than just a travel agency. We're your partners in adventure, dedicated to crafting unforgettable travel experiences tailored to your unique desires. Our commitment to excellence and customer satisfaction sets us apart.",
+    "completed-trips": "Completed trips",
+    "satisfied-clients": "Satisfied clients"
+  },
+  "contact-us": {
+    "heading": "Contact us",
+    "name": "Name",
+    "email": "E-mail",
+    "message": "Message",
+    "send": "Send"
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "description": ""
+  },
   "footer": {
     "sitemap": {
       "title": "Sitemap",
@@ -19,5 +40,17 @@
       "email": "info@emintravels.com",
       "address": "Ashgabat"
     }
+  },
+  "places": {
+    "russia": "Russia",
+    "turkiye": "Turkiye",
+    "germany": "Germany",
+    "uzbekistan": "Uzbekistan",
+    "china": "China",
+    "georgia": "Georgia",
+    "moscow": "Moscow",
+    "istanbul": "Istanbul",
+    "beijing": "Beijing",
+    "tbilisi": "Tbilisi"
   }
 }

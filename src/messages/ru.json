@@ -1,15 +1,36 @@
 {
   "navigation": {
     "about-us": "О нас",
-    "destinations": "Destinations",
+    "destinations": "Пункты назначения",
     "contact-us": "Связаться с нами",
     "gallery": "Галерея"
+  },
+  "hero": {
+    "explore-the-world": "Исследуйте мир",
+    "travel-with-us": "Путешествуйте с нами"
+  },
+  "about-us": {
+    "heading": "О нас",
+    "description": "Мы больше, чем просто туристическое агентство. Мы ваши партнеры в приключениях, стремящиеся создать незабываемые впечатления от путешествий, соответствующие вашим уникальным желаниям. Наша приверженность совершенству и удовлетворенности клиентов отличает нас.",
+    "completed-trips": "Совершенные поездки",
+    "satisfied-clients": "Довольные клиенты"
+  },
+  "contact-us": {
+    "heading": "Связаться с нами",
+    "name": "Имя",
+    "email": "Эл. почта",
+    "message": "Сообщение",
+    "send": "Отправить"
+  },
+  "gallery": {
+    "heading": "Галерея",
+    "description": ""
   },
   "footer": {
     "sitemap": {
       "title": "Компания",
       "about-us": "О нас",
-      "destinations": "Destinations",
+      "destinations": "Пункты назначения",
       "contact-us": "Связаться с нами",
       "gallery": "Галерея"
     },
@@ -19,5 +40,17 @@
       "email": "info@emintravels.com",
       "address": "Ashgabat"
     }
+  },
+  "places": {
+    "russia": "Россия",
+    "turkiye": "Турция",
+    "germany": "Германия",
+    "uzbekistan": "Узбекистан",
+    "china": "Китай",
+    "georgia": "Грузия",
+    "moscow": "Москва",
+    "istanbul": "Стамбул",
+    "beijing": "Пекин",
+    "tbilisi": "Тбилиси"
   }
 }

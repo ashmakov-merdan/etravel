@@ -1,15 +1,36 @@
 {
   "navigation": {
     "about-us": "Biz barada",
-    "destinations": "Destinations",
+    "destinations": "Ýerler",
     "contact-us": "Habarlaşmak",
     "gallery": "Galereýa"
+  },
+  "hero": {
+    "explore-the-world": "Dünýäni öwreniň",
+    "travel-with-us": "Biz bilen syýahat ediň"
+  },
+  "about-us": {
+    "heading": "Biz barada",
+    "description": "Biz diňe bir syýahatçylyk gullugy däl. Özboluşly islegleriňize laýyk gelýän ýatdan çykmajak syýahat tejribelerini taýýarlamaga bagyşlanan başdan geçirmeleriň hyzmatdaşlarydyrys. Üstünlige we müşderini kanagatlandyrmaga bolan ygrarlylygymyz bizi tapawutlandyrýar.",
+    "completed-trips": "Tamamlanan syýahatlar",
+    "satisfied-clients": "Kanagatly müşderiler"
+  },
+  "contact-us": {
+    "heading": "Habarlaşmak",
+    "name": "Adyňyz",
+    "email": "E-poçtaňyz",
+    "message": "Hatyňyz",
+    "send": "Ugratmak"
+  },
+  "gallery": {
+    "heading": "Galereýa",
+    "description": ""
   },
   "footer": {
     "sitemap": {
       "title": "Kompaniýa",
       "about-us": "Biz barada",
-      "destinations": "Destinations",
+      "destinations": "Ýerler",
       "contact-us": "Habarlaşmak",
       "gallery": "Galereýa"
     },
@@ -19,5 +40,17 @@
       "email": "info@emintravels.com",
       "address": "Ashgabat"
     }
+  },
+  "places": {
+    "russia": "Russiýa",
+    "turkiye": "Türkiýe",
+    "germany": "Germaniýa",
+    "uzbekistan": "Özbegistan",
+    "china": "Hytaý",
+    "georgia": "Gruziýa",
+    "moscow": "Moskwa",
+    "istanbul": "Stambul",
+    "beijing": "Pekin",
+    "tbilisi": "Tbilisi"
   }
 }

@@ -1,4 +1,5 @@
 import Logo from "@/components/logo";
+import { Link } from "@/i18n/navigation";
 import FacebookIcon from "@/lib/icons/FacebookIcon";
 import InstagramIcon from "@/lib/icons/InstagramIcon";
 import YoutubeIcon from "@/lib/icons/YoutubeIcon";
@@ -64,11 +65,17 @@ const Footer: FC = () => {
     <footer className="px-4 2xl:px-0 container mx-auto divide-y-[1px] divide-primary-100">
       <div className="py-6 grid gap-5 md:gap-0 md:grid-cols-2 justify-center md:justify-start">
         <div className="space-y-6">
-          <Logo size="w-[120px]" />
+          <Logo size="w-[180px]" />
           <div className="inline-flex gap-4">
-            <InstagramIcon />
-            <FacebookIcon />
-            <YoutubeIcon />
+            <Link href={"https://instagram.com"} target="_blank">
+              <InstagramIcon />
+            </Link>
+            <Link href={"https://facebook.com"} target="_blank">
+              <FacebookIcon />
+            </Link>
+            <Link href={"https://youtube.com"} target="_blank">
+              <YoutubeIcon />
+            </Link>
           </div>
         </div>
         <div className="grid md:grid-cols-3 gap-5">{widgets.map(renderWidget)}</div>
@@ -76,7 +83,7 @@ const Footer: FC = () => {
       <div className="text-center py-3">
         <p className="text-sm text-primary-400">© 2024. Emin Travel</p>
       </div>
-    </footer>
+    </footer >
   )
 };
 
