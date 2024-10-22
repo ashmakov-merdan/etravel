@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Loading from "./loading";
 import useWindowSize from "@/lib/hooks/useWindowSize";
 import Hero from "@/components/hero";
+import Gallery from "@/containers/gallery";
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -34,6 +35,7 @@ export default function Home() {
           <AboutUs />
           <Destinations />
           <ContactUs />
+          <Gallery />
         </main>
         <Footer />
       </>
