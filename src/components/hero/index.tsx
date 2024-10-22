@@ -1,12 +1,15 @@
 import { FC } from "react";
 import PlaceCard from "../place-card";
 import image1 from "@/assets/russia.avif";
+import image2 from "@/assets/turkiye.avif";
+import image3 from "@/assets/germany.png";
+import image4 from "@/assets/uzbek.png";
 
 const places = [
   { title: "Moscow", image: image1 },
-  { title: "Moscow", image: image1 },
-  { title: "Moscow", image: image1 },
-  { title: "Moscow", image: image1 },
+  { title: "Turkiye", image: image2 },
+  { title: "Germany", image: image3 },
+  { title: "Tashkent", image: image4 },
 ];
 
 const Hero: FC = () => {
