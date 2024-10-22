@@ -12,7 +12,7 @@ interface DestinationCardProps {
 
 const DestinationCard: FC<DestinationCardProps> = ({ title, country, image, price }) => {
   return (
-    <div className="group p-6 relative max-w-96 min-h-[420px] w-full rounded-3xl overflow-hidden grid items-end"
+    <div className="group p-6 relative md:max-w-96 min-h-[420px] w-full rounded-3xl overflow-hidden grid items-end"
     >
       <Image width={100} height={100} className="absolute top-0 left-0 bottom-0 right-0 w-full h-full object-cover z-[-1]" src={image}  alt={'name'} />
       <div className={`space-y-2 transition-transform z-[2]`}>

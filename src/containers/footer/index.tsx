@@ -40,11 +40,11 @@ const Footer: FC = () => {
 
   const renderWidget = (menu: WidgetMenuType) => {
     return (
-      <div className="text-sm">
+      <div className="text-sm text-center md:text-start">
         <h2 className="font-semibold text-primary">
           {t(`${menu.title}.title`)}
         </h2>
-        <ul className="mt-5 space-y-6">
+        <ul className="mt-5 space-y-2 md:space-y-6">
           {menu.menu.map((item, index) => (
             <li key={index}>
               <a
@@ -62,8 +62,8 @@ const Footer: FC = () => {
   }
 
   return (
-    <footer className="sm:px-4 2xl:px-0 container mx-auto divide-y-[1px] divide-primary-100">
-      <div className="py-6 grid grid-cols-2">
+    <footer className="px-4 2xl:px-0 container mx-auto divide-y-[1px] divide-primary-100">
+      <div className="py-6 grid gap-5 md:gap-0 md:grid-cols-2 justify-center md:justify-start">
         <div className="space-y-6">
           <Logo size="w-[120px]" />
           <div className="inline-flex gap-4">
@@ -72,7 +72,7 @@ const Footer: FC = () => {
             <YoutubeIcon />
           </div>
         </div>
-        <div className="grid grid-cols-3">{widgets.map(renderWidget)}</div>
+        <div className="grid md:grid-cols-3 gap-5">{widgets.map(renderWidget)}</div>
       </div>
       <div className="text-center py-3">
         <p className="text-sm text-primary-400">© 2024. Emin Travel</p>

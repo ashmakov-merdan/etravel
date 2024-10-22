@@ -27,7 +27,7 @@ const Counter: FC<CounterProps> = ({ value=0, direction, className }) => {
     () =>
       springValue.on("change", (latest: number) => {
         if (ref.current) {
-          ref.current.textContent = Intl.NumberFormat("en-US").format(latest);
+          ref.current.textContent = latest.toFixed(0);
         }
       }),
     [springValue]

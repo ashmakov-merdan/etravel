@@ -18,7 +18,7 @@ const SectionBox: FC<SectionBoxProps> = ({ isReverse = false, children }) => {
             <Image src={waveOrange} alt={'wave-orange'} />
           </div>
         ) : (
-          <div className="flex-shrink-0 absolute right-0 top-0 w-fit h-full">
+          <div className="flex-shrink-0 absolute right-0 top-0 w-fit">
             <Image src={waveBlue} alt={'wave-blue'} />
           </div>
         )}

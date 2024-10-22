@@ -8,9 +8,12 @@ import Footer from "@/containers/footer";
 import Gallery from "@/containers/gallery";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
+import useWindowSize from "@/lib/hooks/useWindowSize";
+import Hero from "@/components/hero";
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
+  const size = useWindowSize();
 
   useEffect(() => {
     window.addEventListener("load", () => {
@@ -27,13 +30,13 @@ export default function Home() {
     loading ? <Loading /> :
       <>
         <Navbar />
-        <Header />
-        {/* <main className="space-y-36">
+        {size.width < 1025 ? <Hero /> : <Header />}
+        <main className="space-y-36">
           <AboutUs />
           <Destinations />
           <ContactUs />
-          <Gallery />
-        </main> */}
+          {/* <Gallery /> */}
+        </main>
         <Footer />
       </>
   );
