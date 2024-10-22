@@ -33,11 +33,11 @@ const AboutUs: FC = () => {
               <p className="max-w-md text-primary font-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam culpa repellat suscipit est, temporibus saepe eius accusantium praesentium hic ipsam nam tenetur expedita deleniti impedit non. Aspernatur quisquam vel dolores.</p>
             </div>
             <div className="w-full text-primary inline-flex items-start gap-14">
-              <div className="text-center">
+              <div className="">
                 <Counter value={1000} className="text-5xl font-bold text-secondary" />
                 <p className="text-xl text-wrap">Amala aşyrylan syýahatlar</p>
               </div>
-              <div className="text-center">
+              <div className="">
                 <Counter value={800} className="text-5xl font-bold text-secondary" />
                 <p className="text-xl max-w-[220px]">Satisfied clients</p>
               </div>
