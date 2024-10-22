@@ -37,7 +37,7 @@ const CenterContent = () => {
         borderRadius
       }}
     >
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="pt-14 space-y-6 absolute top-10 left-0 right-0 mx-auto w-fit text-center">
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} className="pt-14 space-y-6 absolute top-10 left-0 right-0 mx-auto w-fit text-center">
         <div>
           <h2 className="text-6xl font-bold text-primary">Explore The World</h2>
           <h2 className="text-6xl font-bold text-primary">Travel with us</h2>

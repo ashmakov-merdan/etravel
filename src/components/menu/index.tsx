@@ -16,7 +16,7 @@ const Menu = () => {
   ), [t]);
 
   return (
-    <nav role={"navigation"} className="py-6 z-[10]">
+    <nav role={"navigation"} className="py-6 max-lg:hidden block z-[10]">
       <ul role={"list"} className="inline-flex items-center gap-12">{renderNavigation}</ul>
     </nav>
   )

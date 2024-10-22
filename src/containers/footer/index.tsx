@@ -62,7 +62,7 @@ const Footer: FC = () => {
   }
 
   return (
-    <footer className="container mx-auto divide-y-[1px] divide-primary-100">
+    <footer className="sm:px-4 2xl:px-0 container mx-auto divide-y-[1px] divide-primary-100">
       <div className="py-6 grid grid-cols-2">
         <div className="space-y-6">
           <Logo size="w-[120px]" />

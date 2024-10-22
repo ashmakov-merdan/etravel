@@ -28,12 +28,12 @@ export default function Home() {
       <>
         <Navbar />
         <Header />
-        <main className="space-y-36">
+        {/* <main className="space-y-36">
           <AboutUs />
           <Destinations />
           <ContactUs />
           <Gallery />
-        </main>
+        </main> */}
         <Footer />
       </>
   );
