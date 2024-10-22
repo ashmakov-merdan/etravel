@@ -40,7 +40,7 @@ const Footer: FC = () => {
 
   const renderWidget = (menu: WidgetMenuType) => {
     return (
-      <div className="text-sm text-center md:text-start">
+      <div key={menu.title} className="text-sm text-center md:text-start">
         <h2 className="font-semibold text-primary">
           {t(`${menu.title}.title`)}
         </h2>

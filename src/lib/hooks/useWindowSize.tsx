@@ -8,16 +8,18 @@ function useWindowSize() {
 
   useEffect(() => {
     function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
+      if (typeof window !== 'undefined') {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
     }
-    
+
     window.addEventListener("resize", handleResize);
-     
+
     handleResize();
-    
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

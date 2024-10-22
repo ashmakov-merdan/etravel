@@ -27,7 +27,7 @@ const ContactUs: FC = () => {
 
   return (
     <section id={"contact-us"} className="px-4 2xl:px-0 pt-28 container mx-auto grid place-items-center">
-      {size.width < 1024 ? <MobileBox image={contact}>
+      {typeof window !== 'undefined' && size.width < 1024 ? <MobileBox image={contact}>
         <div className="bg-primary-100 py-14">
           <div className="px-6 space-y-5">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">{t('heading')}</h2>

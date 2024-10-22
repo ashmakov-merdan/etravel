@@ -30,7 +30,7 @@ export default function Home() {
     loading ? <Loading /> :
       <>
         <Navbar />
-        {size.width < 1025 ? <Hero /> : <Header />}
+        {typeof window !== 'undefined' && size.width < 1025 ? <Hero /> : <Header />}
         <main className="space-y-36">
           <AboutUs />
           <Destinations />

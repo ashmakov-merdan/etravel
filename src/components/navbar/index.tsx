@@ -9,7 +9,7 @@ import useWindowSize from "@/lib/hooks/useWindowSize";
 const Navbar = () => {
   const size = useWindowSize();
 
-  const LOGO_SIZE = size.width < 1280 ? "500px" : "640px"
+  const LOGO_SIZE = typeof window !== 'undefined' && size.width < 1280 ? "500px" : "640px"
 
   const { scrollY } = useScroll();
   const logoY = useTransform(scrollY, [0, 300], ["90%", "0%"]);
