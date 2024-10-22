@@ -1,5 +1,13 @@
 import { FC } from "react";
 import PlaceCard from "../place-card";
+import image1 from "@/assets/russia.avif";
+
+const places = [
+  { title: "Moscow", image: image1 },
+  { title: "Moscow", image: image1 },
+  { title: "Moscow", image: image1 },
+  { title: "Moscow", image: image1 },
+];
 
 const Hero: FC = () => {
   return (
@@ -17,10 +25,7 @@ const Hero: FC = () => {
           <p className="mx-auto max-w-[500px] text-primary">Explore wonders all over the world right now and have the latest experience of adventuring in different places with our best service for you. Use Reserve Now & Pay Later to secure the activities you don’t want to miss without being locked in.</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 items-center justify-center">
-          <PlaceCard />
-          <PlaceCard />
-          <PlaceCard />
-          <PlaceCard />
+          { places.map((place) => <PlaceCard key={place.title} {...place} />)}
         </div>
       </div>
     </div>

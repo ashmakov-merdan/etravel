@@ -5,7 +5,6 @@ import AboutUs from "@/containers/about-us";
 import ContactUs from "@/containers/contact-us";
 import Destinations from "@/containers/destinations";
 import Footer from "@/containers/footer";
-import Gallery from "@/containers/gallery";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
 import useWindowSize from "@/lib/hooks/useWindowSize";
@@ -35,7 +34,6 @@ export default function Home() {
           <AboutUs />
           <Destinations />
           <ContactUs />
-          {/* <Gallery /> */}
         </main>
         <Footer />
       </>

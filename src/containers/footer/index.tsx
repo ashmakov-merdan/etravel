@@ -1,7 +1,6 @@
 import Logo from "@/components/logo";
 import FacebookIcon from "@/lib/icons/FacebookIcon";
 import InstagramIcon from "@/lib/icons/InstagramIcon";
-import XIcon from "@/lib/icons/XIcon";
 import YoutubeIcon from "@/lib/icons/YoutubeIcon";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
