@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <motion.div className="fixed top-0 left-0 right-0 bg-white/20 backdrop-blur-md" style={{ zIndex }}>
-      <div className="px-4 py-6 xl:p-0 container mx-auto grid max-lg:grid-cols-2 grid-cols-3 items-center">
+      <div className="px-4 py-3 md:py-6 xl:p-0 container mx-auto grid max-lg:grid-cols-2 grid-cols-3 items-center">
         <motion.div className="max-lg:hidden block absolute z-[-10]" transition={{ type: "spring", stiffness: 500 }} style={{ y: logoY, x: logoX, width: logoSize }}>
           <Link href={"/"}>
             <Logo size="" />
