@@ -1,4 +1,3 @@
-import { usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useMemo } from "react";
