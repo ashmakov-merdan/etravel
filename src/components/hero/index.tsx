@@ -4,6 +4,7 @@ import image1 from "@/assets/russia.avif";
 import image2 from "@/assets/turkiye.avif";
 import image3 from "@/assets/germany.png";
 import image4 from "@/assets/uzbek.png";
+import { useTranslations } from "next-intl";
 
 export const places = [
   { title: "moscow", image: image1 },
@@ -13,14 +14,16 @@ export const places = [
 ];
 
 const Hero: FC = () => {
+  const t = useTranslations('hero');
+
   return (
     <div className="px-4 lg:px-0 container mx-auto pt-40 space-y-32">
       <div className="text-center space-y-3">
         <div>
-          <h2 className="text-4xl sm:text-6xl font-semibold text-primary">Explore The World</h2>
-          <h2 className="text-4xl sm:text-6xl font-semibold text-primary">Travel with us</h2>
+          <h2 className="text-4xl sm:text-6xl font-semibold text-primary">{t('explore-the-world')}</h2>
+          <h2 className="text-4xl sm:text-6xl font-semibold text-primary">{t('travel-with-us')}</h2>
         </div>
-        <p className="text-primary font-normal max-w-[400px] mx-auto">Explore wonders all over the world right now and have the latest experience of adventuring in different places with our best service for you. clas</p>
+        <p className="text-primary font-normal max-w-[400px] mx-auto">{t('description')}</p>
       </div>
       <div className="text-center space-y-10">
         <div className="space-y-3">

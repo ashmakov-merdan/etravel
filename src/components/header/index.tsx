@@ -43,7 +43,7 @@ const CenterContent = () => {
           <h2 className="text-7xl font-bold text-primary">{t('explore-the-world')}</h2>
           <h2 className="text-7xl font-bold text-primary">{t('travel-with-us')}</h2>
         </div>
-        <p className="mx-auto max-w-[403px] text-primary">Explore wonders all over the world right now and have the latest experience of adventuring in different places with our best service for you.</p>
+        <p className="mx-auto max-w-[403px] text-primary">{t('description')}</p>
       </motion.div>
       <motion.div style={{ y: destinationY }} className="pb-20 container mx-auto text-center space-y-10">
         <div className="space-y-3">
