@@ -11,8 +11,8 @@ const HEIGHT = 1000;
 
 const Header: FC = () => {
   return (
-    <header className="relative h-fit pt-96 grid bg-secondary-100" style={{ height: `calc(${HEIGHT})px + 100vh` }}>
-      <motion.div className="absolute left-0 right-0 top-28 mx-auto z-[2]">
+    <header className="relative h-fit pt-96 grid bg-secondary-100">
+      <motion.div className="max-w-[700px] absolute left-0 right-0 top-28 mx-auto z-[1]">
         <Image className="mx-auto" width={620} src={heroImg} alt={"hero-image"} />
       </motion.div>
       <CenterContent />
