@@ -17,7 +17,7 @@ const Menu = () => {
 
   return (
     <nav role={"navigation"} className="max-lg:hidden block z-[10]">
-      <ul role={"list"} className="flex items-center justify-between gap-5">{renderNavigation}</ul>
+      <ul role={"list"} className="flex items-center justify-between">{renderNavigation}</ul>
     </nav>
   )
 };
