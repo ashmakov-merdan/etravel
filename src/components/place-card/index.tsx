@@ -1,3 +1,4 @@
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
@@ -5,16 +6,20 @@ import { FC } from "react";
 interface PlaceCardProps {
   title: string
   image: string | StaticImageData
+  index: number
 }
 
-const PlaceCard: FC<PlaceCardProps> = ({ title, image }) => {
+const PlaceCard: FC<PlaceCardProps> = ({ title, image, index }) => {
   const t = useTranslations('places');
+  const { scrollY } = useScroll();
 
+  const initialOffset = index === 0 || index === 3 ? "-130px" : "0px";
+  const cardY = useTransform(scrollY, [0, 800], [initialOffset, "0px"]);
   return (
-    <div className="space-y-3">
-      <Image className="h-full w-full aspect-[9/16] rounded-full object-cover" src={image} alt={"moscow"} />
+    <motion.div className="relactive space-y-3" style={{ y: cardY }} transition={{ duration: 0.4, type: "spring" }}>
+      <Image className="h-full w-full aspect-[9/15] rounded-full object-cover" src={image} alt={"moscow"} />
       <h3 className="text-center text-primary font-semibold text-2xl">{t(title)}</h3>
-    </div>
+    </motion.div>
   )
 };
 

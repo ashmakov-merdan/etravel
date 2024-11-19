@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-primary.svg"
+import logo from "@/assets/logo-emintravel.svg"
 import Image from "next/image";
 import { FC } from "react";
 
