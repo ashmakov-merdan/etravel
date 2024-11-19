@@ -66,7 +66,7 @@ const Footer: FC = () => {
   return (
     <footer className="px-4 2xl:px-0 container mx-auto divide-y-[1px] divide-primary-100">
       <div className="py-6 grid gap-5 md:gap-0 md:grid-cols-2 justify-center md:justify-start">
-        <div className="space-y-6">
+        <div className="space-y-6 flex flex-col items-center md:items-start">
           <Link href={"/"}>
             <Logo size="w-[100px]" />
           </Link>
