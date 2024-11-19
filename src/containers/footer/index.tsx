@@ -2,6 +2,8 @@ import Logo from "@/components/logo";
 import { Link } from "@/i18n/navigation";
 import FacebookIcon from "@/lib/icons/FacebookIcon";
 import InstagramIcon from "@/lib/icons/InstagramIcon";
+import TelegramIcon from "@/lib/icons/TelegramIcon";
+import XIcon from "@/lib/icons/XIcon";
 import YoutubeIcon from "@/lib/icons/YoutubeIcon";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
@@ -65,15 +67,23 @@ const Footer: FC = () => {
     <footer className="px-4 2xl:px-0 container mx-auto divide-y-[1px] divide-primary-100">
       <div className="py-6 grid gap-5 md:gap-0 md:grid-cols-2 justify-center md:justify-start">
         <div className="space-y-6">
-          <Logo size="w-[180px]" />
+          <Link href={"/"}>
+            <Logo size="w-[100px]" />
+          </Link>
           <div className="inline-flex gap-4">
-            <Link href={"https://instagram.com"} target="_blank">
+            <Link href={"https://x.com/emintravel"} target="_blank">
+              <XIcon />
+            </Link>
+            <Link href={"https://t.me/emintravel"} target="_blank">
+              <TelegramIcon />
+            </Link>
+            <Link href={"https://instagram.com/emintravel"} target="_blank">
               <InstagramIcon />
             </Link>
-            <Link href={"https://facebook.com"} target="_blank">
+            <Link href={"https://facebook.com/emintravel"} target="_blank">
               <FacebookIcon />
             </Link>
-            <Link href={"https://youtube.com"} target="_blank">
+            <Link href={"https://youtube.com/@emintravel"} target="_blank">
               <YoutubeIcon />
             </Link>
           </div>
