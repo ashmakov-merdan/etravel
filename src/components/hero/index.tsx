@@ -17,7 +17,7 @@ const Hero: FC = () => {
   const t = useTranslations('hero');
 
   return (
-    <div className="px-4 lg:px-0 container mx-auto pt-64 space-y-32">
+    <div className="px-4 lg:px-0 container mx-auto pt-28 lg:pt-64 space-y-32">
       <div className="text-center space-y-3">
         <div>
           <h2 className="text-4xl sm:text-6xl font-semibold text-primary">{t('explore-the-world')}</h2>

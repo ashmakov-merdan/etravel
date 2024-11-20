@@ -10,7 +10,7 @@ const HEIGHT = 1000;
 
 const Header: FC = () => {
   return (
-    <header className="relative h-fit pt-36 grid bg-secondary-100">
+    <header className="relative h-fit lg:pt-36 grid bg-secondary-100">
       <CenterContent />
     </header>
   )

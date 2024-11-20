@@ -14,7 +14,11 @@ const PlaceCard: FC<PlaceCardProps> = ({ title, image, index }) => {
   const { scrollY } = useScroll();
 
   const initialOffset = index === 0 || index === 3 ? "-130px" : "0px";
-  const cardY = useTransform(scrollY, [0, 800], [initialOffset, "0px"]);
+  const cardY = useTransform(
+    scrollY,
+    [0, 800],
+    typeof window !== 'undefined' && window.innerWidth > 1024 ? [initialOffset, "0px"] : ["0px", "0px"]
+  );
   
   return (
     <motion.div className="relactive space-y-3" style={{ y: cardY }} transition={{ duration: 0.4, type: "spring" }}>
