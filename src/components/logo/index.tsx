@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FC } from "react";
 
 interface LogoProps {
-  size: string
+  size?: string
 }
 
 const Logo: FC<LogoProps> = ({ size="w-72" }) => {
