@@ -9,7 +9,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
   children,
   ...args
 }, ref) => {
-  return <button ref={ref} className={`px-6 py-3 bg-primary rounded-xl text-white font-semibold ${className}`} {...args}>{children}</button>
+  return <button ref={ref} className={`px-4 xl:px-6 py-2 xl:py-3 bg-primary hover:bg-primary-700 rounded-xl text-white font-semibold transition-colors ${className}`} {...args}>{children}</button>
 });
 
 Button.displayName = "Button"

@@ -12,7 +12,7 @@ const AboutUs: FC = () => {
   return (
     <section id={"about-us"} className="mt-20 px-4 lg:px-0 pt-32 container mx-auto  grid place-items-center">
       {typeof window !== 'undefined' && size.width < 1024 ? <MobileBox image={about}>
-        <div className="bg-secondary-100 p-5 space-y-4">
+        <div className="bg-secondary-100 py-10 px-12 space-y-4">
           <h2 className="text-2xl md:text-5xl font-semibold text-primary">{t('heading')}</h2>
           <p className="text-primary text-base md:text-lg">{t('description')}</p>
         </div>

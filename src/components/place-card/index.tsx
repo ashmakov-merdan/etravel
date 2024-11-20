@@ -15,6 +15,7 @@ const PlaceCard: FC<PlaceCardProps> = ({ title, image, index }) => {
 
   const initialOffset = index === 0 || index === 3 ? "-130px" : "0px";
   const cardY = useTransform(scrollY, [0, 800], [initialOffset, "0px"]);
+  
   return (
     <motion.div className="relactive space-y-3" style={{ y: cardY }} transition={{ duration: 0.4, type: "spring" }}>
       <Image className="h-full w-full aspect-[9/15] rounded-full object-cover" src={image} alt={"moscow"} />

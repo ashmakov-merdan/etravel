@@ -8,7 +8,7 @@ interface MobileBoxProps {
 
 const MobileBox: FC<MobileBoxProps> = ({ image, children }) => {
   return (
-    <div className="flex flex-col overflow-hidden rounded-3xl">
+    <div className="flex flex-col overflow-hidden rounded-[45px]">
       <div className="relative">
         <Image src={image} alt={"img about"} />
       </div>

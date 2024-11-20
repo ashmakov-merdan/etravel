@@ -25,6 +25,13 @@ img {
   background-position: top;
 }
 
+.ymaps-2-1-79-gotoymaps__container {
+  margin-left: 80px;
+	display: flex;
+  justify-content: flex-end;
+  background-color: red;
+}
+
 /* .gallery-gradient {
   mask-image: linear-gradient(
     to right,

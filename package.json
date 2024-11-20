@@ -11,6 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^2.1.9",
     "@heroicons/react": "^2.1.5",
+    "@pbe/react-yandex-maps": "^1.2.5",
+    "@yandex/ymaps3-types": "^1.0.15285770",
     "framer-motion": "^11.11.1",
     "lenis": "^1.1.14",
     "next": "14.2.14",
@@ -18,7 +20,6 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.53.0",
-    "react-map-gl": "^7.1.7",
     "react-use-measure": "^2.1.1"
   },
   "devDependencies": {

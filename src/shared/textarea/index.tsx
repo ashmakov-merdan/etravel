@@ -14,9 +14,9 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({
     ref={ref}
     defaultValue={defaultValue}
     onChange={onChange}
-    rows={5}
+    rows={3}
     autoComplete="off"
-    className={`py-3 px-4 text-sm text-primary outline-none border-none focus:ring-2 focus:ring-primary-200 rounded-xl bg-primary-50 transition-colors resize-none ${className}`}
+    className={`py-2 xl:py-3 px-4 text-sm text-primary outline-none border-none focus:ring-2 focus:ring-primary-200 rounded-xl bg-primary-50 transition-colors resize-none ${className}`}
     {...args}></textarea>
 });
 

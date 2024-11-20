@@ -13,7 +13,7 @@ const DestinationCard: FC<DestinationCardProps> = ({ title, country, image }) =>
   const t = useTranslations('places');
 
   return (
-    <div className="group p-6 relative w-full aspect-[9/14] rounded-3xl overflow-hidden grid items-end">
+    <div className="group p-6 relative w-full aspect-[9/12] rounded-[45px] overflow-hidden grid items-end">
       <Image priority className="absolute top-0 left-0 bottom-0 right-0 w-full h-full object-cover z-[-1]" src={image}  alt={'name'} />
       <div className={`space-y-2 transition-transform z-[2]`}>
         <h2 className="text-white font-bold text-2xl">{t(title)}</h2>

@@ -26,14 +26,14 @@ const Carousel: FC<{ isReverse: boolean }> = ({ isReverse }) => {
       <div className="flex gap-7 xl:gallery-gradient">
         <motion.div initial={{ x: isReverse ? "-100%" : 0 }} animate={{ x: isReverse ? 0 : "-100%" }} transition={{ duration: DURATION[0], repeat: Infinity, ease: "linear" }} className="flex gap-7 flex-shrink-0">
           {images.map((img, i) => (
-            <div className="relative h-[460px] w-80 overflow-hidden rounded-xl" key={i}>
+            <div className="relative h-[460px] w-80 overflow-hidden rounded-[45px]" key={i}>
               <Image className="object-cover" fill src={img} alt={`carousel-${i}`} />
             </div>
           ))}
         </motion.div>
         <motion.div initial={{ x: isReverse ? "-100%" : 0 }} animate={{ x: isReverse ? 0 : "-100%" }} transition={{ duration: DURATION[0], repeat: Infinity, ease: "linear" }} className="flex gap-7 flex-shrink-0">
           {images.map((img, i) => (
-            <div className="relative h-[460px] w-80 overflow-hidden rounded-xl" key={i}>
+            <div className="relative h-[460px] w-80 overflow-hidden rounded-[45px]" key={i}>
               <Image className="object-cover" fill src={img} alt={`carousel-${i}`} />
             </div>
           ))}
