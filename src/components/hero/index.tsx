@@ -2,8 +2,8 @@ import { FC } from "react";
 import PlaceCard from "../place-card";
 import image1 from "@/assets/russia.avif";
 import image2 from "@/assets/turkiye.avif";
-import image3 from "@/assets/germany.png";
-import image4 from "@/assets/uzbek.png";
+import image3 from "@/assets/frankfurt.webp";
+import image4 from "@/assets/tashkent.jpg";
 import { useTranslations } from "next-intl";
 
 export const places = [

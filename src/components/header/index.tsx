@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { places } from "../hero";
 import PlaceCard from "../place-card";
 import { useTranslations } from "next-intl";
+import Button from "@/shared/button";
 
 const HEIGHT = 1000;
 
@@ -16,7 +17,7 @@ const Header: FC = () => {
 };
 
 const CenterContent = () => {
-  const t = useTranslations("hero");
+  const t = useTranslations();
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [HEIGHT, HEIGHT + 500], [1, 9])
   const backgroundSize = useTransform(scrollY, [800, HEIGHT], ["170%", "100%"]);
@@ -36,10 +37,15 @@ const CenterContent = () => {
     >
       <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4, type: "spring" }} className="pt-10 space-y-4 mx-auto w-fit text-center">
         <div className="">
-          <h2 className="text-7xl font-bold text-primary">{t('explore-the-world')}</h2>
-          <h2 className="text-7xl font-bold text-primary">{t('travel-with-us')}</h2>
+          <h2 className="text-7xl font-bold text-primary">{t('hero.explore-the-world')}</h2>
+          <h2 className="text-7xl font-bold text-primary">{t('hero.travel-with-us')}</h2>
         </div>
-        <p className="mx-auto max-w-[403px] text-primary">{t('description')}</p>
+        <p className="mx-auto max-w-[403px] text-primary">{t('hero.description')}</p>
+        <div>
+          <Button className="bg-secondary-600 hover:bg-secondary-500 transition-colors !rounded-full">
+            <a href="#contact-us">{t('navigation.contact-us')}</a>
+          </Button>
+        </div>
       </motion.div>
       <motion.div style={{ y: destinationY }} className="pb-20 container mx-auto text-center space-y-10 transition-all duration-500">
         <div className="space-y-3">
