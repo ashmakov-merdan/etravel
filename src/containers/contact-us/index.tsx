@@ -26,7 +26,7 @@ const ContactUs: FC = () => {
 
   return (
     <section id="contact-us" className="pt-24 px-4 2xl:px-0 container mx-auto">
-      <div className="relative grid grid-cols-1 lg:grid-cols-2 rounded-[100px] overflow-hidden">
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 rounded-[30px] md:rounded-[100px] overflow-hidden">
         <div className="max-md:aspect-square">
           <CustomMap />
         </div>
