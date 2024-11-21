@@ -49,7 +49,7 @@ const CenterContent = () => {
       </motion.div>
       <motion.div style={{ y: destinationY }} className="pb-20 container mx-auto text-center space-y-10 transition-all duration-500">
         <div className="space-y-3">
-          <motion.h3 style={{ opacity: titleOpacity }} transition={{ duration: 0.4, type: "keyframes" }} className="text-xl md:text-xl lg:text-2xl xl:text-4xl font-semibold text-primary">Top destination choices for you in the world</motion.h3>
+          <motion.h3 style={{ opacity: titleOpacity }} transition={{ duration: 0.4, type: "keyframes" }} className="text-xl md:text-xl lg:text-2xl xl:text-4xl font-semibold text-primary">{t('hero.best-choices')}</motion.h3>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 items-center justify-center">
           {places.map((place, index) => <PlaceCard key={place.title} {...place} index={index} />)}

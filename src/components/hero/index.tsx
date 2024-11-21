@@ -27,8 +27,7 @@ const Hero: FC = () => {
       </div>
       <div className="text-center space-y-10">
         <div className="space-y-3">
-          <h3 className="text-3xl sm:text-4xl font-semibold text-primary">Top destination choices for you in the world</h3>
-          <p className="mx-auto max-w-[500px] text-primary">Explore wonders all over the world right now and have the latest experience of adventuring in different places with our best service for you. Use Reserve Now & Pay Later to secure the activities you don’t want to miss without being locked in.</p>
+          <h3 className="text-3xl sm:text-4xl font-semibold text-primary">{t('best-choices')}</h3>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 items-center justify-center">
           { places.map((place, index) => <PlaceCard key={place.title} index={index} {...place} />)}
