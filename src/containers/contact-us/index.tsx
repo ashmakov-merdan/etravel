@@ -6,8 +6,6 @@ import Button from "@/shared/button";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
 import CustomMap from "@/components/map";
-import waveBlue from '@/assets/wave-blue.svg'
-import Image from "next/image";
 
 type ContactForm = {
   name: string
