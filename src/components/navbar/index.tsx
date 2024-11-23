@@ -1,4 +1,5 @@
 "use client"
+import TurkishAirlines from "@/lib/icons/TurkishAirlines";
 import Language from "../language";
 import Logo from "../logo";
 import Menu from "../menu";
@@ -8,10 +9,11 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-white/20 backdrop-blur-md z-50">
       <div className="px-4 py-3 relative container mx-auto grid max-lg:grid-cols-2 grid-cols-3 items-center">
-        <div>
+        <div className="inline-flex items-center gap-3">
           <Link href={"/"}>
             <Logo size="w-[80px]" />
           </Link>
+          <TurkishAirlines />
         </div>
         <Menu />
         <div className="">

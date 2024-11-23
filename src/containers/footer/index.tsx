@@ -30,9 +30,9 @@ const widgets: WidgetMenuType[] = [
   {
     title: "meet-us",
     menu: [
-      { label: "phone", href: "tel:+99365616263" },
+      { label: "phone", href: "tel:+99371798857" },
       { label: "email", href: "mailto:info@etravel.com" },
-      { label: "address", href: "Ashgabat" }
+      { label: "address", href: "https://yandex.tm/maps/10324/ashgabat/?from=api-maps&ll=58.382912%2C37.914740&mode=routes&origin=jsapi_2_1_79&rtext=~37.914900%2C58.382912&rtt=auto&ruri=~&z=18" }
     ]
   }
 ]
@@ -71,20 +71,8 @@ const Footer: FC = () => {
             <Logo size="w-[100px]" />
           </Link>
           <div className="inline-flex gap-4">
-            <Link href={"https://x.com/emintravel"} target="_blank">
-              <XIcon />
-            </Link>
-            <Link href={"https://t.me/emintravel"} target="_blank">
-              <TelegramIcon />
-            </Link>
             <Link href={"https://instagram.com/emintravel"} target="_blank">
               <InstagramIcon />
-            </Link>
-            <Link href={"https://facebook.com/emintravel"} target="_blank">
-              <FacebookIcon />
-            </Link>
-            <Link href={"https://youtube.com/@emintravel"} target="_blank">
-              <YoutubeIcon />
             </Link>
           </div>
         </div>
