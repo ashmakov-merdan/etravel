@@ -1,8 +1,8 @@
-Open [E.Travel]() to see Demo.
+Open [E.Travel](emintravels.com) to see website.
 
 ## Getting Started
 
-First, run the development server:
+To run the development server:
 
 ```bash
 npm run dev

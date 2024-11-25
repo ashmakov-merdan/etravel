@@ -27,7 +27,7 @@ const widgets: WidgetMenuType[] = [
     title: "meet-us",
     menu: [
       { label: "phone", href: "tel:+99371798857" },
-      { label: "email", href: "mailto:info@etravel.com" },
+      { label: "email", href: "mailto:contact@emintravels.com" },
       { label: "address", href: "https://yandex.tm/maps/10324/ashgabat/?from=api-maps&ll=58.382912%2C37.914740&mode=routes&origin=jsapi_2_1_79&rtext=~37.914900%2C58.382912&rtt=auto&ruri=~&z=18" }
     ]
   }
