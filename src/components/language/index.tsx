@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { startTransition, useState } from "react";
 import { useParams } from "next/navigation";
+import { GlobeAltIcon } from "@heroicons/react/24/outline";
 
 const Language = () => {
   const router = useRouter()
@@ -24,8 +25,8 @@ const Language = () => {
 
   return (
     <div className="flex justify-end z-50">
-      <button className="p-3 rounded-full border border-neutral-500 hover:border-primary backdrop-blur-md bg-white/30" onClick={() => setShow(!show)}>
-        <p>{locale.toString().toUpperCase()}</p>
+      <button className="p-2.5 rounded-full border border-neutral-500 hover:border-primary backdrop-blur-md bg-white/30" onClick={() => setShow(!show)}>
+        <GlobeAltIcon className={"size-5"} color="black" />
       </button>
       <AnimatePresence>
         {show ? <motion.ul className="absolute space-y-2 text-primary" animate={{ y: 60, opacity: 1 }} exit={{ y: 0, opacity: 0 }}>
