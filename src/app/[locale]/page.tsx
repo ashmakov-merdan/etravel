@@ -10,6 +10,7 @@ import Loading from "./loading";
 import useWindowSize from "@/lib/hooks/useWindowSize";
 import Hero from "@/components/hero";
 import Gallery from "@/containers/gallery";
+import Snowfall from "react-snowfall";
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -38,6 +39,11 @@ export default function Home() {
           <Gallery />
         </main>
         <Footer />
+        <div className="fixed w-screen h-screen top-0 left-0 right-0" style={{ pointerEvents: "none"}}>
+        <Snowfall
+          color="white"
+        />
+        </div>
       </>
   );
 }
