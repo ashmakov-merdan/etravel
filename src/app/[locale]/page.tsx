@@ -10,7 +10,6 @@ import Loading from "./loading";
 import useWindowSize from "@/lib/hooks/useWindowSize";
 import Hero from "@/components/hero";
 import Gallery from "@/containers/gallery";
-import Snowfall from "react-snowfall";
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);

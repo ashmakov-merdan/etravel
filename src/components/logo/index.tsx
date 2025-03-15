@@ -1,4 +1,3 @@
-import logoWithSnow from "@/assets/logo-with-snow.svg";
 import logoEmin from "@/assets/logo-emintravel.svg"
 import Image from "next/image";
 import { FC } from "react";

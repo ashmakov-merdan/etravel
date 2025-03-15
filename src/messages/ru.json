@@ -17,6 +17,9 @@
     "completed-trips": "Совершенные поездки",
     "satisfied-clients": "Довольные клиенты"
   },
+  "destinations": {
+    "heading": "Исследуйте лучшие места"
+  },
   "contact-us": {
     "heading": "Связаться с нами",
     "name": "Имя",

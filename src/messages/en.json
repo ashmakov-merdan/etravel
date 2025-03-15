@@ -17,6 +17,9 @@
     "completed-trips": "Completed trips",
     "satisfied-clients": "Satisfied clients"
   },
+  "destinations": {
+    "heading": "Explore top places"
+  },
   "contact-us": {
     "heading": "Contact us",
     "name": "Name",
