@@ -1,4 +1,5 @@
 import logoWithSnow from "@/assets/logo-with-snow.svg";
+import logoEmin from "@/assets/logo-emintravel.svg"
 import Image from "next/image";
 import { FC } from "react";
 
@@ -8,7 +9,7 @@ interface LogoProps {
 
 const Logo: FC<LogoProps> = ({ size="w-72" }) => {
   return (
-    <Image className={`${size}`} src={logoWithSnow} alt={"logo"} />
+    <Image className={`${size}`} src={logoEmin} alt={"logo"} />
   )
 };
 

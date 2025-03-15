@@ -39,11 +39,11 @@ export default function Home() {
           <Gallery />
         </main>
         <Footer />
-        <div className="fixed w-screen h-screen top-0 left-0 right-0" style={{ pointerEvents: "none"}}>
+        {/* <div className="fixed w-screen h-screen top-0 left-0 right-0" style={{ pointerEvents: "none"}}>
         <Snowfall
           color="white"
         />
-        </div>
+        </div> */}
       </>
   );
 }
