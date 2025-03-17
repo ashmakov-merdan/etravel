@@ -1,4 +1,4 @@
-import logoEmin from "@/assets/logo-emintravel.svg"
+import logoEmin from "@/assets/logo-spring.svg"
 import Image from "next/image";
 import { FC } from "react";
 
